@@ -66,7 +66,7 @@ header {
   align-content: center;
   text-align: center;
   grid-area: header;
-  background-color: white;
+  background-color: none;
 }
 
 main {
@@ -102,9 +102,14 @@ margin: auto;
   margin-top: 5px;
 }
 
-.bottom1 {
-  margin-left: 45%;
+.intro {
+z-index: 2;
 }
+
+.button{
+color: none;
+}
+
 
 .site-title {
   font-size: 3rem;
