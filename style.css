@@ -1,0 +1,149 @@
+html {
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  text-decoration: none;
+  text-decoration-color: black;
+  background-image:url(images/bg1.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+a{
+text-decoration: none;
+text-decoration-color: black;
+}
+
+.link {
+text-decoration: none;
+color:   #00254d;
+}
+
+.link:hover {
+color: #b8daff;
+}
+
+.link:visited{
+  color:  #00254d;
+}
+
+.wrapper1 {
+  display: grid;
+  align-content: center;
+  text-align: center;
+  grid-gap: 5px;
+  grid-template-columns: 120px 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header header header"
+    "sidenav main main main main"
+    "sidenav main main main main"
+    "sidenav main main main main"
+    "sidenav main main main main"
+    "footer footer footer footer footer";
+}
+.wrapper2 {
+  display: grid;
+  align-content: center;
+  text-align: center;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "header header header header"
+    "30mff comix bio sounds videoh"
+    "30mff comix bio sounds videoh"
+    "30mff comix bio sounds videoh"
+    "30mff comix bio sounds videoh";
+}
+
+
+header {
+  display: flex;
+  align-content: center;
+  text-align: center;
+  grid-area: header;
+  background-color: none;
+}
+
+main {
+  grid-area: main;
+  /* background-color: lightgreen; */
+}
+
+.sidenav {
+  grid-area: sidenav;
+}
+
+/* footer {
+  grid-area: footer;
+  background-color: aliceblue;
+} */
+
+.container {
+  position: relative;
+  text-align: center;
+  justify-content: center;
+}
+
+.image1 {
+display: none;
+margin: auto;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  position: relative;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.bottom1 {
+  margin-left: 45%;
+}
+
+.site-title {
+  font-size: 3rem;
+}
+
+.hamburger {
+  display: none;
+  margin: 5px;
+}
+
+.hamburger div {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  .wrapper {
+    position: relative;
+    display: block;
+    grid-gap: 5px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .sidenav  {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+  }
+  .sidenav-open {
+    height: 100px;
+    transition: height 0.5s
+  }
+  .hamburger {
+    display: block;
+  }
+}
