@@ -1,11 +1,17 @@
+@@font-face {
+  src: url(/Users/fatimaaljneibi/Library/Fonts/ja-jp.ttf);
+}
+/* i downloaded the same font from genshin's UI !! */
+
 html {
   font-size: 14px;
+  font-family: TT_Skip-E;
 }
 
 body {
-  margin: 0;
-  text-decoration: none;
+  margin: 50px;
   text-decoration-color: black;
+  text-align: justify;
   background-image:url(images/bg1.jpeg);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -14,57 +20,82 @@ body {
 
 a{
 text-decoration: none;
-text-decoration-color: black;
-}
-
-.link {
-text-decoration: none;
 color:   #00254d;
 }
-
-.link:hover {
+a:hover{
 color: #b8daff;
 }
-
-.link:visited{
-  color:  #00254d;
+a:visited{
+color:  #00254d;
 }
 
-.wrapper1 {
+.bio{
+  width: 300px;
+  height: 250px;
+  /* transition: height 2s; */
+}
+.bio:click {
+  /* height: 500px; */
+}
+.front{
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+/* these three lines are for centering text in the div */
+width: 100%;
+height: 100%;
+z-index: 2; /* this is in front */
+/* transform: translateZ(2px); */
+}
+
+.back{
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100%;
+z-index: -2;
+/* transform: translateZ(-2px); /*now these two divs have some distance between them*/ */
+}
+/* .anim{
+animation-name: spin;
+animation-duration: 10s;
+animation-fill-mode: forwards;
+}
+
+@keyframes spin {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(180deg); }
+} */
+
+
+.wrapper {
   display: grid;
+  /* background-color: #5c90c9; */
   align-content: center;
   text-align: center;
   grid-gap: 5px;
-  grid-template-columns: 120px 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-columns: center;
+  grid-template-rows: 1fr;
   grid-template-areas:
-    "header header header header header"
-    "sidenav main main main main"
-    "sidenav main main main main"
-    "sidenav main main main main"
-    "sidenav main main main main"
-    "footer footer footer footer footer";
-}
-.wrapper2 {
-  display: grid;
-  align-content: center;
-  text-align: center;
-  grid-gap: 5px;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-  "header header header header"
-    "30mff comix bio sounds videoh"
-    "30mff comix bio sounds videoh"
-    "30mff comix bio sounds videoh"
-    "30mff comix bio sounds videoh";
+  "header"
+  "intro"
+  "bio"
+  "30mff"
+  "comix"
+  "sound"
+  "videoh"
+  "surprise";
 }
 
 
 header {
+  position: absolute;
   display: flex;
+  align-self: center;
   align-content: center;
-  text-align: center;
   grid-area: header;
   background-color: none;
 }
@@ -134,11 +165,11 @@ color: none;
   .wrapper {
     position: relative;
     display: block;
-    grid-gap: 5px;
+    grid-gap: 300px;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr;
   }
-  .sidenav  {
+  /* .sidenav  {
     position: absolute;
     width: 100%;
     height: 0;
@@ -147,8 +178,8 @@ color: none;
   .sidenav-open {
     height: 100px;
     transition: height 0.5s
-  }
-  .hamburger {
+  } */
+  /* .hamburger {
     display: block;
-  }
+  } */
 }

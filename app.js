@@ -1,9 +1,9 @@
 var hamburger = document.querySelector(".hamburger");
 var sidenav = document.querySelector(".sidenav");
 
-hamburger.addEventListener('click', function(){
-    sidenav.classList.toggle("sidenav-open");
-});
+// hamburger.addEventListener('click', function(){
+//     sidenav.classList.toggle("sidenav-open");
+// });
 
 //create the same query from css
 const mobileChangeMediaQuery = window.matchMedia('(max-width: 768px)')
@@ -19,6 +19,13 @@ function handleMobileChange(e) {
       sidenav.classList.remove("sidenav-open");
   }
 }
+
+var front = document.querySelector(".front");
+var container = document.querySelector(".container");
+
+container.addEventListener('click' , function(){
+  container.classList.add('anim');
+});
 
 // Register event listener
 mobileChangeMediaQuery.addListener(handleMobileChange)
