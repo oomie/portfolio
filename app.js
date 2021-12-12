@@ -1,9 +1,9 @@
-var hamburger = document.querySelector(".hamburger");
+var bio = document.querySelector(".bio");
 var sidenav = document.querySelector(".sidenav");
 
-// hamburger.addEventListener('click', function(){
-//     sidenav.classList.toggle("sidenav-open");
-// });
+bio.addEventListener('click', function(){
+
+ });
 
 //create the same query from css
 const mobileChangeMediaQuery = window.matchMedia('(max-width: 768px)')
