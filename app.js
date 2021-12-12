@@ -1,9 +1,10 @@
-var bio = document.querySelector(".bio");
+var bio = document.getElementById('bio')
 var sidenav = document.querySelector(".sidenav");
 
-bio.addEventListener('click', function(){
 
- });
+// bio.addEventListener('click',()=> {
+//   bio.style.display = "none"
+// })
 
 //create the same query from css
 const mobileChangeMediaQuery = window.matchMedia('(max-width: 768px)')
@@ -23,9 +24,8 @@ function handleMobileChange(e) {
 var front = document.querySelector(".front");
 var container = document.querySelector(".container");
 
-container.addEventListener('click' , function(){
-  container.classList.add('anim');
-});
+// container.addEventListener('click' , function(){
+// });
 
 // Register event listener
 mobileChangeMediaQuery.addListener(handleMobileChange)
