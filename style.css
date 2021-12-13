@@ -14,7 +14,6 @@ body {
   text-decoration-color: black;
   text-align: justify;
   background-image:url(images/bg1.jpeg);
-  /* background-repeat: no-repeat; */
   background-attachment: fixed;
   background-size: 100%;
 }
@@ -27,43 +26,46 @@ a:hover{
 color: #b8daff;
 }
 
-
-.bio{
-  grid-area: bio;
-  transition: height 2s;
-}
-
-.hats{
-  grid-area: hats;
-}
-
-
 .header {
-  /* display: flex;
-  margin-top: 0px; */
   margin-left: 100px;
   margin-right: 100px;
-  /* align-items: stretch; */
   display:grid;
   align-content: center;
   justify-content: center;
 }
 
+.intro {
+  margin-left: 100px;
+  margin-right: 100px;
+  display:grid;
+  align-content: center;
+  justify-content: center;
+}
 
 .wrapper {
   display: grid;
-  /* background-color: #5c90c9; */
+  margin-top: 0px;
   align-content: center;
   text-align: center;
   grid-gap: 10px;
   grid-template-columns: center;
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
-  "intro intro"
   "bio bio"
   "hats comix"
   "sound videoh";
-  /* "videoh"; */
+}
+
+.bio{
+  grid-area: bio;
+}
+
+.hats{
+  grid-area: hats;
+}
+
+.comix{
+  grid-area: comix;
 }
 
 .sound{
@@ -72,43 +74,6 @@ color: #b8daff;
 
 .videoh{
 grid-area: videoh;
-}
-
-/* .header {
-  position: absolute;
-  display: grid;
-  align-content: center;
-  /*align-content: center; */
-  /* grid-area: header;
-  background-color: none;
-} */
-
-
-.container {
-  position: relative;
-  text-align: center;
-  justify-content: center;
-}
-
-.image1 {
-display: none;
-margin: auto;
-}
-
-.bottom {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  position: relative;
-  margin: auto;
-  margin-top: 5px;
-}
-
-.intro {
-grid-area: intro;
-}
-
-.button{
-color: none;
 }
 
 
