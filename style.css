@@ -5,7 +5,8 @@
 
 html {
   font-size: 14px;
-  font-family: TT_Skip-E;
+  font-family: 'TT_Skip-E', 'Short Stack',cursive;
+;
 }
 
 body {
@@ -37,10 +38,15 @@ color: #b8daff;
 }
 
 
-header {
-  display: flex;
-  margin-top: 0px;
+.header {
+  /* display: flex;
+  margin-top: 0px; */
+  margin-left: 100px;
+  margin-right: 100px;
   /* align-items: stretch; */
+  display:grid;
+  align-content: center;
+  justify-content: center;
 }
 
 
