@@ -1,9 +1,9 @@
 
-var bio = document.getElementById("bio");
-var hats = document.getElementById('hats');
-var comix = document.getElementById('comix');
-var sound = document.getElementById('sound');
-var vid = document.getElementById('vid');
+var bio = document.getElementById("biofact");
+var hats = document.getElementById('hatsfact');
+var comix = document.getElementById('comixfact');
+var sound = document.getElementById('soundfact');
+var vid = document.getElementById('vidfact');
 
 
 // intro.addEventListener('click',()=> {
