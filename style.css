@@ -13,7 +13,7 @@ body {
   text-decoration-color: black;
   text-align: justify;
   background-image:url(images/bg1.jpeg);
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-attachment: fixed;
   background-size: 100%;
 }
