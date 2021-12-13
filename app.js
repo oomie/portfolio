@@ -5,11 +5,6 @@ var comix = document.getElementById('comixfact');
 var sound = document.getElementById('soundfact');
 var vid = document.getElementById('vidfact');
 
-
-// intro.addEventListener('click',()=> {
-//   intro.style.display = "none"
-//   intro.play();
-// })
 bio.addEventListener('click',()=> {
 alert('Fun fact:\n I collect a lot of things.. some of my collections include beaded bracelets, plushies and Studio Ghibli puzzles! ');
 })

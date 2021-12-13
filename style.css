@@ -57,15 +57,13 @@ color: #b8daff;
   text-align: center;
   grid-gap: 10px;
   grid-template-columns: center;
-  grid-template-rows: 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas:
-  /* "header" */
-  "intro"
-  "bio"
-  "hats"
-  "comix"
-  "sound"
-  "videoh";
+  "intro intro"
+  "bio bio"
+  "hats comix"
+  "sound videoh";
+  /* "videoh"; */
 }
 
 .sound{
@@ -106,7 +104,6 @@ margin: auto;
 }
 
 .intro {
-z-index: 2;
 grid-area: intro;
 }
 
@@ -116,10 +113,17 @@ color: none;
 
 
 
-@media (max-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+  @media (max-width: 768px) {
+    html {
+      font-size: 16px;
+    }
+    .wrapper {
+      position: relative;
+      display: block;
+      grid-gap: 5px;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
 
 
 }
